@@ -1,0 +1,26 @@
+{
+  "name": "@freddieridell/kebab-case",
+  "version": "0.0.1",
+  "description": "A stripped down, minimal kebab-case parser, to deal with 90% of programatic conversion usage",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FreddieRidell/kebab-case.git"
+  },
+  "keywords": [
+    "kebab-case",
+    "small",
+    "blazing",
+    "conversion",
+    "parser"
+  ],
+  "author": "Freddie Ridell <contact@freddieridell.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FreddieRidell/kebab-case/issues"
+  },
+  "homepage": "https://github.com/FreddieRidell/kebab-case#readme"
+}

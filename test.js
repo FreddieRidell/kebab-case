@@ -1,4 +1,4 @@
-import k from "/.";
+const k = require(".");
 
 describe("kebab-case", () => {
 	it("doens't change a string already in kebab case", () => {
@@ -9,7 +9,15 @@ describe("kebab-case", () => {
 		expect(k("foo bar baz")).toBe("foo-bar-baz")
 	})
 
-	it("strips any non-alphanumeric characters", () => {})
-	it("replaces capital transitions in camelCase", () => {});
-	it("doesn't add a '-' at the start or end of a string", () => {});
+	it("strips any non-alphanumeric characters", () => {
+		expect(k("foo ' bar *_ baz")).toBe("foo-bar-baz")
+	})
+	it("replaces capital transitions in camelCase and PascalCase", () => {
+		expect(k("fooBarBaz")).toBe("foo-bar-baz")
+		expect(k("FooBarBaz")).toBe("foo-bar-baz")
+	});
+	it("doesn't add a '-' at the start or end of a string", () => {
+		expect(k("   foo bar baz   ")).toBe("foo-bar-baz")
+		expect(k("   FooBarBaz   ")).toBe("foo-bar-baz")
+	});
 })
