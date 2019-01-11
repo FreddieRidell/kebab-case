@@ -3,8 +3,10 @@
   "version": "0.0.1",
   "description": "A stripped down, minimal kebab-case parser, to deal with 90% of programatic conversion usage",
   "main": "index.js",
+  "sideEffects": false,
   "scripts": {
-    "test": "jest test.js"
+    "test": "jest test.js",
+    "test:watch": "jest test.js --watch --runInBand --bail"
   },
   "repository": {
     "type": "git",
@@ -22,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/FreddieRidell/kebab-case/issues"
   },
-  "homepage": "https://github.com/FreddieRidell/kebab-case#readme"
+  "homepage": "https://github.com/FreddieRidell/kebab-case#readme",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
 }

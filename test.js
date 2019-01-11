@@ -10,7 +10,7 @@ describe("kebab-case", () => {
 	})
 
 	it("strips any non-alphanumeric characters", () => {
-		expect(k("foo ' bar *_ baz")).toBe("foo-bar-baz")
+		expect(k("1foo ' 2 bar *_ b3az")).toBe("1foo-2-bar-b3az")
 	})
 	it("replaces capital transitions in camelCase and PascalCase", () => {
 		expect(k("fooBarBaz")).toBe("foo-bar-baz")
