@@ -12,19 +12,13 @@
     "type": "git",
     "url": "git+https://github.com/FreddieRidell/kebab-case.git"
   },
-  "keywords": [
-    "kebab-case",
-    "small",
-    "blazing",
-    "conversion",
-    "parser"
-  ],
+  "keywords": ["kebab-case", "small", "blazing", "conversion", "parser"],
   "author": "Freddie Ridell <contact@freddieridell.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/FreddieRidell/kebab-case/issues"
   },
-  "homepage": "https://github.com/FreddieRidell/kebab-case#readme",
+  "homepage": "https://freddieridell.com/open-source/2019-01-kebab-case/",
   "devDependencies": {
     "jest": "^23.6.0"
   }
